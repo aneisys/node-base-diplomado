@@ -7,6 +7,7 @@ const env = {
   db_password: process.env.DB_PASSWORD || '',
   db_database: process.env.DB_DATABASE || 'diplomado_db',
   db_dialect: process.env.DB_DIALECT || 'mysql',
+  db_ssl: process.env.DB_SSL || false,
   bcrypt_salt_rounds: process.env.BCRYPT_SALT_ROUNDS || 10,
   jwt_secret: process.env.JWT_SECRET || 'secreto',
   jwt_expires_in: process.env.JWT_EXPIRES_IN || '10m',

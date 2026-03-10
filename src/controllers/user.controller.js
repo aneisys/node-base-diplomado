@@ -86,6 +86,11 @@ const updateUser = async (_req, res) => {
 const deleteR = async (_req, res) => {
   const { id } = _req.params;
   try {
+    await Task.destroy({
+      where: {
+        userId: id
+      }
+    });
     await User.destroy({
       where: {
         id
